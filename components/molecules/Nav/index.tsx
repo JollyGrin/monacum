@@ -19,10 +19,15 @@ import { TbChevronDown as IconDown } from "react-icons/tb";
 
 export const Nav = () => {
   return (
-    <Grid templateColumns={{ base: "1fr", sm: "repeat(3,1fr)" }} gap="2rem">
+    <Grid templateColumns={{ base: "1fr", md: "repeat(3,1fr)" }} gap="2rem">
       <HStack as={Link} href="/">
         <Image src="/logo.png" alt="logo" boxSize="5rem" />
-        <Text fontSize="3rem" fontWeight={700} color="brand.secondary">
+        <Text
+          fontSize="3rem"
+          fontWeight={700}
+          color="brand.secondary"
+          whiteSpace="nowrap"
+        >
           Monacum Immobilien
         </Text>
       </HStack>
