@@ -8,7 +8,6 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
   Grid,
 } from "@chakra-ui/react";
 import Link from "next/link";
@@ -19,10 +18,17 @@ import { TbChevronDown as IconDown } from "react-icons/tb";
 
 export const Nav = () => {
   return (
-    <Grid templateColumns={{ base: "1fr", md: "repeat(3,1fr)" }} gap="2rem">
+    <Grid
+      templateColumns={{
+        base: "1fr",
+        md: "repeat(3,1fr)",
+      }}
+      gap="2rem"
+    >
       <HStack as={Link} href="/">
         <Image src="/logo.png" alt="logo" boxSize="5rem" />
         <Text
+          display={{ base: "inline", md: "none", lg: "inline" }}
           fontSize="3rem"
           fontWeight={700}
           color="brand.secondary"
@@ -36,7 +42,7 @@ export const Nav = () => {
         fontSize="2rem"
         gap="2rem"
         justifySelf="center"
-        flexWrap={{ base: "wrap", sm: "unset" }}
+        flexWrap={{ base: "wrap", md: "unset" }}
       >
         <Dropdown />
         <Dropdown />

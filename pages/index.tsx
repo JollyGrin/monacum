@@ -19,11 +19,20 @@ export default function Home() {
           <Grid
             minH="50vh"
             placeItems="center"
-            backgroundImage="/houses.svg"
+            backgroundImage="/houses2.svg"
             backgroundPosition="bottom"
-            backgroundSize="auto"
-            backgroundRepeat="repeat-x"
+            backgroundSize="unset"
+            backgroundRepeat="repeat"
+            mx="-2rem"
+            position="relative"
           >
+            <Box
+              w="100%"
+              h="100px"
+              bg="linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(255,248,243,0.75) 50%, rgba(255,248,243,1) 100%)"
+              position="absolute"
+              top="0"
+            />
             <VStack alignItems="start" gap="2rem">
               <Text
                 fontFamily="header"
@@ -31,7 +40,7 @@ export default function Home() {
                 fontSize="13rem"
                 lineHeight="10rem"
               >
-                Don't trust us,
+                Don&apos;t trust us,
                 <br /> trust our clients
               </Text>
               <Text fontSize="2.5rem">
