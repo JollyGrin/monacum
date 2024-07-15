@@ -3,28 +3,42 @@ import { ReactNode, useState } from "react";
 import { FaHammer as IconHammer } from "react-icons/fa6";
 import { FaHandsHelping as IconHelping } from "react-icons/fa";
 import { MdFolderSpecial as IconSpecial } from "react-icons/md";
+import { InfoModal } from "./InfoModal";
 
 export const ThreeColumns = () => {
   const [modal, setModal] = useState<"weg" | "miet" | "sonder">();
 
   return (
-    <Grid templateColumns={{ base: "1fr", md: "repeat(3,1fr)" }} gap="1rem">
-      <Item
-        img="https://picsum.photos/200"
-        title="WEG-Verwaltung"
-        icon={<IconHammer />}
-      />
-      <Item
-        img="https://picsum.photos/200"
-        title="Miethausverwaltung"
-        icon={<IconHelping />}
-      />
-      <Item
-        img="https://picsum.photos/200"
-        title="Sondereigentumsverwaltung"
-        icon={<IconSpecial />}
-      />
-    </Grid>
+    <>
+      {modal && (
+        <InfoModal
+          isOpen={!!modal}
+          onClose={() => setModal(undefined)}
+          modalKey={modal}
+        />
+      )}
+
+      <Grid templateColumns={{ base: "1fr", md: "repeat(3,1fr)" }} gap="1rem">
+        <Item
+          img="https://picsum.photos/200"
+          title="WEG-Verwaltung"
+          icon={<IconHammer />}
+          onClick={() => setModal("weg")}
+        />
+        <Item
+          img="https://picsum.photos/200"
+          title="Miethausverwaltung"
+          icon={<IconHelping />}
+          onClick={() => setModal("miet")}
+        />
+        <Item
+          img="https://picsum.photos/200"
+          title="Sondereigentumsverwaltung"
+          icon={<IconSpecial />}
+          onClick={() => setModal("sonder")}
+        />
+      </Grid>
+    </>
   );
 };
 
@@ -39,7 +53,12 @@ export const ThreeColumns = () => {
 //   );
 // };
 
-const Item = (props: { img: string; title: string; icon?: ReactNode }) => {
+const Item = (props: {
+  img: string;
+  title: string;
+  icon?: ReactNode;
+  onClick(): void;
+}) => {
   return (
     <Flex
       direction="column"
@@ -63,7 +82,9 @@ const Item = (props: { img: string; title: string; icon?: ReactNode }) => {
       <Text fontWeight={200}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </Text>
-      <Button w="fit-content">More Information</Button>
+      <Button w="fit-content" onClick={props.onClick}>
+        Mehr
+      </Button>
     </Flex>
   );
 };
