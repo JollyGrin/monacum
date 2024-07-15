@@ -28,12 +28,12 @@ export const LandingHero = () => {
           fontSize="9rem"
           lineHeight="8rem"
         >
-          Don&apos;t trust us,
-          <br /> trust our clients
+          Mit uns treffen Sie die richtige Wahl.
         </Text>
 
         <Text fontSize="2.5rem">
-          Over 300 listings, apartments, lots and more available now
+          Nach diesem Prinzip betreuen wir Wohnungseigentümergemeinschaften und
+          Miethäuser umfassend, zuverlässig und gewissenhaft.
         </Text>
         <Button rightIcon={<IconArrow fontSize="3rem" />}>Get in touch</Button>
       </VStack>

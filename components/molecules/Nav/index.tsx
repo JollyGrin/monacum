@@ -44,9 +44,11 @@ export const Nav = () => {
         justifySelf="center"
         flexWrap={{ base: "wrap", md: "unset" }}
       >
-        <Dropdown />
-        <Dropdown />
-        <Text>Dataschutz</Text>
+        <UberUns />
+
+        <Button variant="ghost" as={Link} href="/">
+          Dataschutz
+        </Button>
         <Button variant="ghost" as={Link} href="/impressum">
           Impressum
         </Button>
@@ -64,7 +66,7 @@ export const Nav = () => {
   );
 };
 
-const Dropdown = () => {
+const UberUns = () => {
   return (
     <Menu>
       <MenuButton
@@ -73,14 +75,10 @@ const Dropdown = () => {
         rightIcon={<IconDown />}
         fontWeight={600}
       >
-        Actions
+        Über uns
       </MenuButton>
       <MenuList>
-        <MenuItem>Download</MenuItem>
-        <MenuItem>Create a Copy</MenuItem>
-        <MenuItem>Mark as Draft</MenuItem>
-        <MenuItem>Delete</MenuItem>
-        <MenuItem>Attend a Workshop</MenuItem>
+        <MenuItem>Coming soon</MenuItem>
       </MenuList>
     </Menu>
   );
