@@ -6,7 +6,7 @@ export const Links = () => {
     <HStack gap="5rem" alignItems="start">
       <Box mt="2rem">
         <Text fontWeight={600}>Services</Text>
-        <LinkText href="/">WEG</LinkText>
+        <LinkText href="/">WEG-Verwaltung</LinkText>
         <LinkText href="/">Miethausverwaltung</LinkText>
         <LinkText href="/">Sondereigentumsverwaltung</LinkText>
       </Box>
