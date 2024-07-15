@@ -1,20 +1,12 @@
-import {
-  Image,
-  Text,
-  HStack,
-  Box,
-  Grid,
-  VStack,
-  Flex,
-  Button,
-} from "@chakra-ui/react";
-import { ReactNode } from "react";
-
+import { Text, Grid, Flex, Button } from "@chakra-ui/react";
+import { ReactNode, useState } from "react";
 import { FaHammer as IconHammer } from "react-icons/fa6";
 import { FaHandsHelping as IconHelping } from "react-icons/fa";
 import { MdFolderSpecial as IconSpecial } from "react-icons/md";
 
 export const ThreeColumns = () => {
+  const [modal, setModal] = useState<"weg" | "miet" | "sonder">();
+
   return (
     <Grid templateColumns={{ base: "1fr", md: "repeat(3,1fr)" }} gap="1rem">
       <Item

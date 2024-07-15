@@ -8,8 +8,9 @@ export const Footer = () => {
     <Box minH="20vh" bg="brand.secondary" color="brand.primary" p="2rem">
       <MapIframe />
       <Grid
-        templateColumns="1fr 3fr 1fr"
-        h="100%"
+        display={{ base: "block", sm: "grid" }}
+        templateColumns={{ base: "auto", sm: "1fr 3fr 1fr" }}
+        minH={{ base: "300px", sm: 0 }}
         maxW="900px"
         m="0 auto"
         alignItems="start"
@@ -24,7 +25,7 @@ export const Footer = () => {
 
 const Logo = () => {
   return (
-    <VStack py="2rem">
+    <VStack py={{ base: 0, sm: "2rem" }}>
       <Image src="/logo.png" alt="logo" boxSize="10rem" alignSelf="center" />
       <Text fontWeight={700} color="brand.highlight" textAlign="center">
         Monacum Immobilien
@@ -32,9 +33,3 @@ const Logo = () => {
     </VStack>
   );
 };
-
-const LinkText = (props: { href: string; children: string }) => (
-  <Text as={Link} href={props.href}>
-    {props.children}
-  </Text>
-);
