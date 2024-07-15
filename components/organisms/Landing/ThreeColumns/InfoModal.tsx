@@ -17,7 +17,7 @@ export function InfoModal(props: {
     <>
       <Modal {...props}>
         <ModalOverlay />
-        <ModalContent minW="500px">
+        <ModalContent minW={{ base: 0, sm: "500px" }}>
           <ModalHeader fontSize="3rem" fontWeight={700} my="1rem" mx="1rem">
             {
               {
