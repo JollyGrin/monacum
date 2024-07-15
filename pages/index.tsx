@@ -18,6 +18,7 @@ import styled from "@emotion/styled";
 import { ReactNode } from "react";
 import { ThreeColumns } from "@/components/organisms/Landing/ThreeColumns";
 import { LoginExplainer } from "@/components/organisms/Landing/LoginExplainer";
+import { Footer } from "@/components/molecules/Footer";
 
 export default function Home() {
   return (
@@ -80,6 +81,7 @@ export default function Home() {
         <Container py="2rem">
           <LoginExplainer />
         </Container>
+        <Footer />
       </main>
     </>
   );
@@ -87,7 +89,7 @@ export default function Home() {
 
 const Container = (props: ChakraProps & { children: ReactNode }) => {
   return (
-    <Box {...props}>
+    <Box {...props} my="4rem">
       <Box maxW="800px" m="0 auto" px="1rem">
         {props.children}
       </Box>
