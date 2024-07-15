@@ -12,11 +12,12 @@ export const colors = {
     primary: "#FFF8F3",
     highlight: "#F7E7DC",
     secondary: "#405D72",
-    shadow: "#758694",
+    shadow: "#d9b485",
   },
   pure: {
     white: "#FFF",
     black: "#0C0C0C",
+    gold: "#e4cc88",
   },
 };
 
