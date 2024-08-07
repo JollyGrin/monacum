@@ -47,19 +47,19 @@ export default function Home() {
             </Box>
           </HStack>
         </Container>
-        <Container bg="brand.highlight" py="3rem">
+        <Container bg="brand.shadow" py="3rem">
           <Text
             alignSelf="center"
             w="fit-content"
             py="2rem"
-            color="brand.shadow"
+            color="brand.primary"
             fontWeight={500}
           >
             In den folgenden Bereichen bieten wir Ihnen eine kompetente und
             präzise Verwaltung Ihrer Objekte:
           </Text>
           <ThreeColumns />
-          <Text pt="2rem" color="brand.shadow" fontWeight={500}>
+          <Text pt="2rem" color="brand.highlight" fontWeight={500}>
             Gerne erstellen wir für Sie ein maßgeschneidertes Angebot mit
             detaillierter Leistungsbeschreibung und freuen uns darauf, Ihnen
             unsere Dienste persönlich vorstellen zu dürfen.

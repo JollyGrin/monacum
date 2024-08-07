@@ -79,9 +79,6 @@ const Item = (props: {
         {props.icon}
       </Grid>
       <Text fontWeight={700}>{props.title}</Text>
-      <Text fontWeight={200}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </Text>
     </Flex>
   );
 };
