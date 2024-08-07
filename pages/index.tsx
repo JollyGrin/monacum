@@ -1,22 +1,9 @@
 import { Nav } from "@/components/molecules/Nav";
 import { LandingHero } from "@/components/organisms/Landing/Hero";
-import {
-  Image,
-  HStack,
-  Button,
-  Box,
-  Grid,
-  Text,
-  VStack,
-  ChakraProps,
-  Center,
-  Flex,
-  Input,
-} from "@chakra-ui/react";
+import { Image, HStack, Box, Text, ChakraProps } from "@chakra-ui/react";
 import Head from "next/head";
-import styled from "@emotion/styled";
 import { ReactNode } from "react";
-import { ThreeColumns } from "@/components/organisms/Landing/ThreeColumns";
+import { ThreeColumnItem } from "@/components/organisms/Landing/ThreeColumns";
 import { LoginExplainer } from "@/components/organisms/Landing/LoginExplainer";
 import { Footer } from "@/components/molecules/Footer";
 
@@ -38,12 +25,13 @@ export default function Home() {
           <HStack
             // alignItems="start"
             gap="1rem"
-            flexDirection={{ base: "column", sm: "row" }}
+            flexDirection={{ base: "column", md: "row" }}
             mb="2rem"
+            minH="300px"
           >
             <Image
               alt="image"
-              src="/image/mary.jpg"
+              src="/towers.jpg"
               maxW={{ base: "100%", sm: "300px" }}
               borderRadius="1rem"
             />
@@ -60,23 +48,27 @@ export default function Home() {
             </Box>
           </HStack>
         </Container>
-        <Container bg="brand.highlight" py="3rem">
-          <Text
-            alignSelf="center"
-            w="fit-content"
-            py="2rem"
-            color="brand.shadow"
-            fontWeight={500}
-          >
-            In den folgenden Bereichen bieten wir Ihnen eine kompetente und
-            präzise Verwaltung Ihrer Objekte:
-          </Text>
-          <ThreeColumns />
-          <Text pt="2rem" color="brand.shadow" fontWeight={500}>
-            Gerne erstellen wir für Sie ein maßgeschneidertes Angebot mit
-            detaillierter Leistungsbeschreibung und freuen uns darauf, Ihnen
-            unsere Dienste persönlich vorstellen zu dürfen.
-          </Text>
+        <Container bg="pure.black" py="3rem" maxW={"unset !important"}>
+          <Box maxW="800px" m="0 auto">
+            <Text
+              alignSelf="center"
+              w="fit-content"
+              py="2rem"
+              color="brand.primary"
+              fontWeight={500}
+            >
+              In den folgenden Bereichen bieten wir Ihnen eine kompetente und
+              präzise Verwaltung Ihrer Objekte:
+            </Text>
+          </Box>
+          <ThreeColumnItem />
+          <Box maxW="800px" m="0 auto">
+            <Text pt="2rem" color="brand.highlight" fontWeight={500}>
+              Gerne erstellen wir für Sie ein maßgeschneidertes Angebot mit
+              detaillierter Leistungsbeschreibung und freuen uns darauf, Ihnen
+              unsere Dienste persönlich vorstellen zu dürfen.
+            </Text>
+          </Box>
         </Container>
         <Container py="2rem">
           <LoginExplainer />
@@ -90,7 +82,7 @@ export default function Home() {
 const Container = (props: ChakraProps & { children: ReactNode }) => {
   return (
     <Box {...props} my="4rem">
-      <Box maxW="800px" m="0 auto" px="1rem">
+      <Box maxW={props.maxW ?? "800px"} m="0 auto" px="1rem">
         {props.children}
       </Box>
     </Box>

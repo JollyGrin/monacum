@@ -11,8 +11,8 @@ export const colors = {
   brand: {
     primary: "#FFF8F3",
     highlight: "#F7E7DC",
-    secondary: "#405D72",
-    shadow: "#d9b485",
+    secondary: "#346c54",
+    shadow: "#debf95",
   },
   pure: {
     white: "#FFF",

@@ -44,10 +44,13 @@ export const Nav = () => {
         justifySelf="center"
         flexWrap={{ base: "wrap", md: "unset" }}
       >
+        <Button variant="ghost" as={Link} href="/">
+          Leistungen
+        </Button>
         <UberUns />
 
         <Button variant="ghost" as={Link} href="/">
-          Dataschutz
+          Datenschutz
         </Button>
         <Button variant="ghost" as={Link} href="/impressum">
           Impressum
