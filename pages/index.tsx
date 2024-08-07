@@ -48,7 +48,12 @@ export default function Home() {
             </Box>
           </HStack>
         </Container>
-        <Container bg="pure.black" py="3rem" maxW={"unset !important"}>
+        <Container
+          bg="pure.black"
+          py="3rem"
+          maxW={"unset !important"}
+          mb={"0 !important"}
+        >
           <Box maxW="800px" m="0 auto">
             <Text
               alignSelf="center"
@@ -70,9 +75,18 @@ export default function Home() {
             </Text>
           </Box>
         </Container>
-        <Container py="2rem">
-          <LoginExplainer />
-        </Container>
+        <Box position="relative" p={0} pt="7rem">
+          <Box
+            w="100%"
+            h="45px"
+            bg="linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,1) 100%)"
+            position="absolute"
+            top="-1px"
+          />
+          <Container py="2rem" mt={0}>
+            <LoginExplainer />
+          </Container>
+        </Box>
         <Footer />
       </main>
     </>
@@ -81,7 +95,7 @@ export default function Home() {
 
 const Container = (props: ChakraProps & { children: ReactNode }) => {
   return (
-    <Box {...props} my="4rem">
+    <Box my="4rem" {...props}>
       <Box maxW={props.maxW ?? "800px"} m="0 auto" px="1rem">
         {props.children}
       </Box>
