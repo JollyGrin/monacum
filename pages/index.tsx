@@ -1,20 +1,7 @@
 import { Nav } from "@/components/molecules/Nav";
 import { LandingHero } from "@/components/organisms/Landing/Hero";
-import {
-  Image,
-  HStack,
-  Button,
-  Box,
-  Grid,
-  Text,
-  VStack,
-  ChakraProps,
-  Center,
-  Flex,
-  Input,
-} from "@chakra-ui/react";
+import { Image, HStack, Box, Text, ChakraProps } from "@chakra-ui/react";
 import Head from "next/head";
-import styled from "@emotion/styled";
 import { ReactNode } from "react";
 import { ThreeColumns } from "@/components/organisms/Landing/ThreeColumns";
 import { LoginExplainer } from "@/components/organisms/Landing/LoginExplainer";
@@ -43,7 +30,7 @@ export default function Home() {
           >
             <Image
               alt="image"
-              src="/image/mary.jpg"
+              src="/towers.jpg"
               maxW={{ base: "100%", sm: "300px" }}
               borderRadius="1rem"
             />

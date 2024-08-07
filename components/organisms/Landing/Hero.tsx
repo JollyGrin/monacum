@@ -1,4 +1,4 @@
-import { Button, Box, Grid, Text, VStack } from "@chakra-ui/react";
+import { Image, Button, Box, Grid, Text, VStack } from "@chakra-ui/react";
 import { LuArrowUpRight as IconArrow } from "react-icons/lu";
 
 export const LandingHero = () => {
@@ -6,9 +6,12 @@ export const LandingHero = () => {
     <Grid
       minH="80vh"
       placeItems="center"
-      backgroundImage="/houses2.svg"
-      backgroundPosition="bottom"
-      backgroundSize="unset"
+      // backgroundImage="/houses2.svg"
+      bg="brand.secondary"
+      backgroundBlendMode="color-dodge"
+      backgroundImage="/office.jpg"
+      backgroundPosition="100% 40%"
+      backgroundSize="cover"
       backgroundRepeat="repeat"
       mx="-2rem"
       position="relative"
@@ -21,19 +24,16 @@ export const LandingHero = () => {
         position="absolute"
         top="0"
       />
-      <VStack alignItems="start" gap="2rem" maxW="600px">
+      <VStack gap="2rem" maxW="600px">
+        <Image src="/logo.png" alt="logo" maxW="300px" />
         <Text
-          fontFamily="header"
-          fontWeight={500}
-          fontSize="9rem"
-          lineHeight="8rem"
+          textAlign="center"
+          w="100%"
+          fontSize="5rem"
+          fontWeight={700}
+          color="brand.primary"
         >
-          Mit uns treffen Sie die richtige Wahl.
-        </Text>
-
-        <Text fontSize="2.5rem">
-          Nach diesem Prinzip betreuen wir Wohnungseigentümergemeinschaften und
-          Miethäuser umfassend, zuverlässig und gewissenhaft.
+          Monacum Immobilien
         </Text>
         <Button rightIcon={<IconArrow fontSize="3rem" />}>Get in touch</Button>
       </VStack>

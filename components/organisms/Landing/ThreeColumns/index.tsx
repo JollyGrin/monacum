@@ -82,9 +82,6 @@ const Item = (props: {
       <Text fontWeight={200}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </Text>
-      <Button w="fit-content" onClick={props.onClick}>
-        Mehr
-      </Button>
     </Flex>
   );
 };
