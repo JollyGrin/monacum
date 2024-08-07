@@ -8,7 +8,7 @@ export const LandingHero = () => {
       placeItems="center"
       // backgroundImage="/houses2.svg"
       bg="brand.secondary"
-      backgroundBlendMode="color-dodge"
+      backgroundBlendMode="hard-light"
       backgroundImage="/office.jpg"
       backgroundPosition="100% 40%"
       backgroundSize="cover"
@@ -25,13 +25,18 @@ export const LandingHero = () => {
         top="0"
       />
       <VStack gap="2rem" maxW="600px">
-        <Image src="/logo.png" alt="logo" maxW="300px" />
+        <Image
+          src="/logo.png"
+          alt="logo"
+          maxW={{ base: "200px", md: "300px" }}
+        />
         <Text
           textAlign="center"
           w="100%"
           fontSize="5rem"
           fontWeight={700}
           color="brand.primary"
+          textShadow="3px 3px 1px rgba(0,0,0,0.25)"
         >
           Monacum Immobilien
         </Text>
