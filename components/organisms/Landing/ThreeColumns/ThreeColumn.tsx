@@ -1,19 +1,47 @@
 import { Text } from "@chakra-ui/react";
 import styled from "@emotion/styled";
+import { ReactNode } from "react";
 
 export const ThreeColumnItem = () => {
   return (
     <Wrapper>
       <div className="container">
-        <Item title="WEG-Verwaltung" desc="description here" />
-        <Item title="Miethausverwaltung" desc="desc" />
-        <Item title="Sondereigentumsverwaltung" desc="desc" />
+        <Item
+          title={
+            <>
+              WEG-
+              <wbr />
+              Verwaltung
+            </>
+          }
+          desc="Wir bieten professionelle WEG-Verwaltung für eine reibungslose und effiziente Verwaltung Ihrer Eigentümergemeinschaft."
+        />
+        <Item
+          title={
+            <>
+              Miethaus
+              <wbr />
+              verwaltung
+            </>
+          }
+          desc="Unser Miethausverwaltungsservice sorgt für eine sorgenfreie und optimale Betreuung Ihrer Mietobjekte."
+        />
+        <Item
+          title={
+            <>
+              Sondereigentums
+              <wbr />
+              verwaltung
+            </>
+          }
+          desc="Unsere Sondereigentumsverwaltung bietet individuelle und maßgeschneiderte Lösungen für die Verwaltung Ihres Sondereigentums."
+        />
       </div>
     </Wrapper>
   );
 };
 
-const Item = (props: { title: string; desc: string }) => {
+const Item = (props: { title: ReactNode; desc: string }) => {
   return (
     <div className="box">
       <span></span>
@@ -22,7 +50,7 @@ const Item = (props: { title: string; desc: string }) => {
           as={"h2"}
           fontFamily="body"
           fontWeight={700}
-          wordBreak="break-all"
+          // wordBreak="break-all"
         >
           {props.title}
         </Text>

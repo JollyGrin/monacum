@@ -40,7 +40,12 @@ export const LoginExplainer = () => {
         >
           ************
         </Text>
-        <Button cursor="default" _hover={{}}>
+        <Button
+          as={Link}
+          href="https://mycasavi.com/app/login"
+          cursor="pointer"
+          _hover={{}}
+        >
           Log in
         </Button>
       </Flex>
