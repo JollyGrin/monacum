@@ -11,7 +11,7 @@ export const Links = () => {
         <LinkText href="/">Sondereigentumsverwaltung</LinkText>
       </Box>
       <Box mt="2rem">
-        <Text fontWeight={600}>Uber uns</Text>
+        <Text fontWeight={600}>Über uns</Text>
         <LinkText href="/">Dataschutz</LinkText>
         <LinkText href="/">Impressum</LinkText>
       </Box>
