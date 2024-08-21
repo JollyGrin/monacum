@@ -1,6 +1,6 @@
-import { Text } from "@chakra-ui/react";
+import { Button, Text, useDisclosure } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 
 export enum THREE_IDs {
   leistungen = "Leistungen",
@@ -8,49 +8,65 @@ export enum THREE_IDs {
   MIET = "Miethausverwaltung",
   SONDER = "Sondereigentumsverwaltung",
 }
+type ModalStates = "WEG" | "MIET" | "SONDER" | undefined;
 export const ThreeColumnItem = () => {
+  const [modal, setModal] = useState<ModalStates>(undefined);
+  function set(state: ModalStates) {
+    return () => setModal(state);
+  }
+
   return (
-    <Wrapper id={THREE_IDs.leistungen}>
-      <div className="container">
-        <Item
-          id={THREE_IDs.WEG}
-          title={
-            <>
-              WEG-
-              <wbr />
-              Verwaltung
-            </>
-          }
-          desc="Wir bieten professionelle WEG-Verwaltung für eine reibungslose und effiziente Verwaltung Ihrer Eigentümergemeinschaft."
-        />
-        <Item
-          id={THREE_IDs.MIET}
-          title={
-            <>
-              Miethaus
-              <wbr />
-              verwaltung
-            </>
-          }
-          desc="Unser Miethausverwaltungsservice sorgt für eine sorgenfreie und optimale Betreuung Ihrer Mietobjekte."
-        />
-        <Item
-          id={THREE_IDs.SONDER}
-          title={
-            <>
-              Sondereigentums
-              <wbr />
-              verwaltung
-            </>
-          }
-          desc="Unsere Sondereigentumsverwaltung bietet individuelle und maßgeschneiderte Lösungen für die Verwaltung Ihres Sondereigentums."
-        />
-      </div>
-    </Wrapper>
+    <>
+      <Wrapper id={THREE_IDs.leistungen}>
+        <div className="container">
+          <Item
+            id={THREE_IDs.WEG}
+            onOpen={set("WEG")}
+            title={
+              <>
+                WEG-
+                <wbr />
+                Verwaltung
+              </>
+            }
+            desc="Wir bieten professionelle WEG-Verwaltung für eine reibungslose und effiziente Verwaltung Ihrer Eigentümergemeinschaft."
+          />
+          <Item
+            id={THREE_IDs.MIET}
+            onOpen={set("MIET")}
+            title={
+              <>
+                Miethaus
+                <wbr />
+                verwaltung
+              </>
+            }
+            desc="Unser Miethausverwaltungsservice sorgt für eine sorgenfreie und optimale Betreuung Ihrer Mietobjekte."
+          />
+          <Item
+            id={THREE_IDs.SONDER}
+            onOpen={set("SONDER")}
+            title={
+              <>
+                Sondereigentums
+                <wbr />
+                verwaltung
+              </>
+            }
+            desc="Unsere Sondereigentumsverwaltung bietet individuelle und maßgeschneiderte Lösungen für die Verwaltung Ihres Sondereigentums."
+          />
+        </div>
+      </Wrapper>
+    </>
   );
 };
 
-const Item = (props: { id: string; title: ReactNode; desc: string }) => {
+const Item = (props: {
+  id: string;
+  title: ReactNode;
+  desc: string;
+  onOpen(): void;
+}) => {
   return (
     <div className="box" id={props.id}>
       <span></span>
@@ -64,6 +80,14 @@ const Item = (props: { id: string; title: ReactNode; desc: string }) => {
           {props.title}
         </Text>
         <Text fontFamily="body">{props.desc}</Text>
+        <Button
+          p="1rem"
+          bg="rgba(0,0,0,0.1)"
+          _hover={{ bg: "rgba(0,0,0,0.2)" }}
+          onClick={props.onOpen}
+        >
+          Mehr info
+        </Button>
       </div>
     </div>
   );
