@@ -48,8 +48,11 @@ export const Nav = () => {
         <Button variant="ghost" as={Link} href={`/#${THREE_IDs.leistungen}`}>
           Leistungen
         </Button>
-        <UberUns />
+        {/* <UberUns /> */}
 
+        <Button variant="ghost" as={Link} href="/uber">
+          Über uns
+        </Button>
         <Button variant="ghost" as={Link} href="/">
           Datenschutz
         </Button>

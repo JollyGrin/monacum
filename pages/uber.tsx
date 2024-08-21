@@ -30,10 +30,14 @@ export default function Home() {
             <Nav />
           </Box>
           <Container>
-            <HStack justifyContent="space-evenly">
+            <Flex
+              justifyContent="space-evenly"
+              direction={{ base: "column", md: "row" }}
+              gap="2rem"
+            >
               <Staff />
               <Staff />
-            </HStack>
+            </Flex>
           </Container>
           <Footer />
         </Flex>
