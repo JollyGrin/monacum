@@ -8,11 +8,14 @@ import {
   Box,
 } from "@chakra-ui/react";
 
+export type ModalStates = "WEG" | "MIET" | "SONDER" | undefined;
+
 export function InfoModal(props: {
   isOpen: boolean;
   onClose(): void;
-  modalKey: "weg" | "miet" | "sonder";
+  modalKey: ModalStates;
 }) {
+  if (props.modalKey === undefined) return null;
   return (
     <>
       <Modal {...props}>
@@ -21,18 +24,18 @@ export function InfoModal(props: {
           <ModalHeader fontSize="3rem" fontWeight={700} my="1rem" mx="1rem">
             {
               {
-                weg: <Text>Weg-Verwaltung</Text>,
-                miet: <Text>Miethausverwaltung</Text>,
-                sonder: <Text>Sondereigentumsverwaltung</Text>,
+                WEG: <Text>Weg-Verwaltung</Text>,
+                MIET: <Text>Miethausverwaltung</Text>,
+                SONDER: <Text>Sondereigentumsverwaltung</Text>,
               }[props.modalKey]
             }
           </ModalHeader>
           <ModalBody p="0 3rem 3rem">
             {
               {
-                weg: <Weg />,
-                miet: <Miet />,
-                sonder: <Sonder />,
+                WEG: <Weg />,
+                MIET: <Miet />,
+                SONDER: <Sonder />,
               }[props.modalKey]
             }
           </ModalBody>

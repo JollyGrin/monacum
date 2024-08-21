@@ -1,6 +1,7 @@
-import { Button, Text, useDisclosure } from "@chakra-ui/react";
+import { Button, Text } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { ReactNode, useState } from "react";
+import { InfoModal, ModalStates } from "./InfoModal";
 
 export enum THREE_IDs {
   leistungen = "Leistungen",
@@ -8,7 +9,6 @@ export enum THREE_IDs {
   MIET = "Miethausverwaltung",
   SONDER = "Sondereigentumsverwaltung",
 }
-type ModalStates = "WEG" | "MIET" | "SONDER" | undefined;
 export const ThreeColumnItem = () => {
   const [modal, setModal] = useState<ModalStates>(undefined);
   function set(state: ModalStates) {
@@ -17,6 +17,13 @@ export const ThreeColumnItem = () => {
 
   return (
     <>
+      {modal !== undefined && (
+        <InfoModal
+          isOpen={true}
+          onClose={() => setModal(undefined)}
+          modalKey={modal}
+        />
+      )}
       <Wrapper id={THREE_IDs.leistungen}>
         <div className="container">
           <Item
