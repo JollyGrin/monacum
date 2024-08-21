@@ -1,3 +1,4 @@
+import { THREE_IDs } from "@/components/organisms/Landing/ThreeColumns";
 import { Text, Box, HStack } from "@chakra-ui/react";
 import Link from "next/link";
 
@@ -6,9 +7,11 @@ export const Links = () => {
     <HStack gap="5rem" alignItems="start">
       <Box mt="2rem">
         <Text fontWeight={600}>Leistungen</Text>
-        <LinkText href="/">WEG-Verwaltung</LinkText>
-        <LinkText href="/">Miethausverwaltung</LinkText>
-        <LinkText href="/">Sondereigentumsverwaltung</LinkText>
+        <LinkText href={`/#${THREE_IDs.WEG}`}>WEG-Verwaltung</LinkText>
+        <LinkText href={`/#${THREE_IDs.MIET}`}>Miethausverwaltung</LinkText>
+        <LinkText href={`/#${THREE_IDs.SONDER}`}>
+          Sondereigentumsverwaltung
+        </LinkText>
       </Box>
       <Box mt="2rem">
         <Text fontWeight={600}>Über uns</Text>

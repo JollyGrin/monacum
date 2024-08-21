@@ -1,3 +1,4 @@
+import { THREE_IDs } from "@/components/organisms/Landing/ThreeColumns";
 import {
   HStack,
   Image,
@@ -44,7 +45,7 @@ export const Nav = () => {
         justifySelf="center"
         flexWrap={{ base: "wrap", md: "unset" }}
       >
-        <Button variant="ghost" as={Link} href="/">
+        <Button variant="ghost" as={Link} href={`/#${THREE_IDs.leistungen}`}>
           Leistungen
         </Button>
         <UberUns />
@@ -58,11 +59,14 @@ export const Nav = () => {
       </HStack>
 
       <HStack gap="3rem" justifySelf="end">
-        <Tooltip fontSize="2rem" label="coming soon">
-          <Button variant="ghost" leftIcon={<IconLock />}>
-            Login
-          </Button>
-        </Tooltip>
+        <Button
+          variant="ghost"
+          leftIcon={<IconLock />}
+          as={Link}
+          href="/#login"
+        >
+          Login
+        </Button>
         <Button rightIcon={<IconArrow fontSize="3rem" />}>Contact Us</Button>
       </HStack>
     </Grid>

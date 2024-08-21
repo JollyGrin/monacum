@@ -49,7 +49,7 @@ export const LoginExplainer = () => {
           Log in
         </Button>
       </Flex>
-      <Box>
+      <Box id="login">
         <Text fontWeight={600} fontSize="2.5rem">
           Login
         </Text>
