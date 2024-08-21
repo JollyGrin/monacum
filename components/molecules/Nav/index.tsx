@@ -18,7 +18,7 @@ import { LuArrowUpRight as IconArrow } from "react-icons/lu";
 import { TbChevronDown as IconDown } from "react-icons/tb";
 import { ContactModal } from "../ContactModal";
 
-const CONTACT_QUERY_KEY = "contact";
+export const CONTACT_QUERY_KEY = "contact";
 export const Nav = () => {
   const { query, push } = useRouter();
   const isContactOpen = query[CONTACT_QUERY_KEY] === "";

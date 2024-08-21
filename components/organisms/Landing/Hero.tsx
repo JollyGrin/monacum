@@ -1,4 +1,6 @@
+import { CONTACT_QUERY_KEY } from "@/components/molecules/Nav";
 import { Image, Button, Box, Grid, Text, VStack } from "@chakra-ui/react";
+import Link from "next/link";
 import { LuArrowUpRight as IconArrow } from "react-icons/lu";
 
 export const LandingHero = () => {
@@ -40,7 +42,13 @@ export const LandingHero = () => {
         >
           Monacum Immobilien
         </Text>
-        <Button rightIcon={<IconArrow fontSize="3rem" />}>Get in touch</Button>
+        <Button
+          rightIcon={<IconArrow fontSize="3rem" />}
+          as={Link}
+          href={{ query: { [CONTACT_QUERY_KEY]: undefined } }}
+        >
+          Get in touch
+        </Button>
       </VStack>
       <Box
         w="100%"
