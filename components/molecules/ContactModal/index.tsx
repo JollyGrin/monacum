@@ -49,7 +49,7 @@ export function ContactModal(props: { isOpen: boolean; onClose(): void }) {
 
                 <Field
                   Icon={<IconPhone />}
-                  link={`mailto:${fields.phone}`}
+                  link={`tel:${fields.phone}`}
                   text={fields.phone}
                 />
               </Flex>
@@ -74,7 +74,7 @@ const Field = (props: { Icon: ReactNode; text: string; link: string }) => (
   <HStack
     gap="inherit"
     transition="all 0.25s ease"
-    _hover={{ transform: "scale(1.1)" }}
+    _hover={{ transform: "scale(1.1)", textDecor: "underline" }}
   >
     {props.Icon}
     <Text as={Link} href={props.link}>
