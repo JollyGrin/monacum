@@ -92,6 +92,7 @@ const Item = (props: {
           bg="rgba(0,0,0,0.1)"
           _hover={{ bg: "rgba(0,0,0,0.2)" }}
           onClick={props.onOpen}
+          fontFamily="body"
         >
           Mehr info
         </Button>
