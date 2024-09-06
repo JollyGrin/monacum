@@ -8,6 +8,7 @@ import {
   HStack,
   VStack,
   Flex,
+  UnorderedList,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import Link from "next/link";
@@ -30,13 +31,56 @@ export default function Home() {
             <Nav />
           </Box>
           <Container>
-            <Flex
-              justifyContent="space-evenly"
-              direction={{ base: "column", md: "row" }}
-              gap="2rem"
-            >
-              <Staff />
-              <Staff />
+            <Flex direction="column" maxW="700px" m="0 auto" gap="2rem">
+              <Text fontWeight={700} fontFamily="header" fontSize="3rem">
+                Ihre Experten für Immobilienverwaltung in und um München
+              </Text>
+              <Text>
+                Willkommen bei Monacum Immobilienverwaltung GmbH, Ihrem
+                vertrauenswürdigen Partner für professionelle
+                Immobilienverwaltung in München und der Region. Mit unserer
+                langjährigen Erfahrung und umfassenden Fachkenntnissen in der
+                Immobilienbranche sorgen wir dafür, dass Ihre Immobilien nicht
+                nur optimal verwaltet, sondern auch nachhaltig im Wert
+                gesteigert werden.
+              </Text>
+              <Text>
+                Wir legen großen Wert auf persönlichen Service und individuelle
+                Betreuung. Unser engagiertes Team aus erfahrenen
+                Immobilienexperten bietet Ihnen maßgeschneiderte Lösungen – von
+                der Mietverwaltung über technische Objektbetreuung bis hin zur
+                Verwaltung von Wohnungseigentümergemeinschaften (WEG).
+              </Text>
+              <Text fontWeight={700} fontFamily="header" fontSize="3rem">
+                Was uns auszeichnet:
+              </Text>
+              <UnorderedList>
+                <li>
+                  <p>
+                    <strong>Verlässlichkeit:</strong> Wir setzen auf eine
+                    transparente und vertrauensvolle Zusammenarbeit.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Qualität:</strong> Durch kontinuierliche Fortbildung
+                    und den Einsatz moderner Technologien bieten wir Ihnen
+                    höchste Standards in der Immobilienverwaltung.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Lokale Expertise:</strong> Mit tiefen Wurzeln in
+                    München und der Region kennen wir den Immobilienmarkt und
+                    seine Besonderheiten genau.
+                  </p>
+                </li>
+              </UnorderedList>
+              <p>
+                Bei uns steht der langfristige Erfolg Ihrer Immobilien im
+                Mittelpunkt. Kontaktieren Sie uns und erfahren Sie, wie wir auch
+                Ihre Objekte effizient und werterhaltend verwalten können!
+              </p>
             </Flex>
           </Container>
           <Footer />
@@ -71,7 +115,7 @@ const Staff = () => {
 const Container = (props: ChakraProps & { children: ReactNode }) => {
   return (
     <Box my="4rem" {...props}>
-      <Box maxW={props.maxW ?? "800px"} m="0 auto" px="1rem">
+      <Box maxW={props.maxW ?? "800px"} m="0 auto" px="2rem">
         {props.children}
       </Box>
     </Box>
