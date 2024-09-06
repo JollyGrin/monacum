@@ -172,17 +172,17 @@ const Wrapper = styled.div`
 
   .container .box:nth-child(1):before,
   .container .box:nth-child(1):after {
-    background: linear-gradient(315deg, #ffbc00, #ff0058);
+    background: linear-gradient(315deg, #d8b384, #ecdcbc);
   }
 
   .container .box:nth-child(2):before,
   .container .box:nth-child(2):after {
-    background: linear-gradient(315deg, #03a9f4, #ff0058);
+    background: linear-gradient(315deg, #346c54, #d8b384);
   }
 
   .container .box:nth-child(3):before,
   .container .box:nth-child(3):after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #ecdcbc, #346c54);
   }
 
   .container .box span {
