@@ -15,8 +15,10 @@ export const Links = () => {
       </Box>
       <Box mt="2rem">
         <Text fontWeight={600}>Über uns</Text>
-        <LinkText href="/">Dataschutz</LinkText>
-        <LinkText href="/">Impressum</LinkText>
+        <LinkText href="/uber">Über uns</LinkText>
+        <LinkText href="?contact=">Kontakt</LinkText>
+        <LinkText href="/datenschutz">Datenschutz</LinkText>
+        <LinkText href="/impressum">Impressum</LinkText>
       </Box>
     </HStack>
   );

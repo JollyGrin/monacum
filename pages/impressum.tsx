@@ -37,8 +37,8 @@ export default function Impressum() {
             Impressum
           </p>
           <Grid
-            templateColumns="1fr 1fr"
-            gap="0.5rem"
+            templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+            gap={{ base: "5rem", md: "0.5rem" }}
             pt="2rem"
             minH="91vh"
             w="100%"
