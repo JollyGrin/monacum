@@ -49,26 +49,20 @@ export default function Home() {
           </HStack>
         </Container>
         <Container
-          bg="pure.black"
+          bg="brand.primary"
           py="3rem"
           maxW={"unset !important"}
           mb={"0 !important"}
         >
-          <Box maxW="800px" m="0 auto">
-            <Text
-              alignSelf="center"
-              w="fit-content"
-              py="2rem"
-              color="brand.primary"
-              fontWeight={500}
-            >
+          <Box maxW="800px" m="0 auto" color="pure.black">
+            <Text alignSelf="center" w="fit-content" py="2rem" fontWeight={500}>
               In den folgenden Bereichen bieten wir Ihnen eine kompetente und
               präzise Verwaltung Ihrer Objekte:
             </Text>
           </Box>
           <ThreeColumnItem />
-          <Box maxW="800px" m="0 auto">
-            <Text pt="2rem" color="brand.highlight" fontWeight={500}>
+          <Box maxW="800px" m="0 auto" color="brand.shadow">
+            <Text pt="2rem" color="inherit" fontWeight={500}>
               Gerne erstellen wir für Sie ein maßgeschneidertes Angebot mit
               detaillierter Leistungsbeschreibung und freuen uns darauf, Ihnen
               unsere Dienste persönlich vorstellen zu dürfen.
@@ -76,13 +70,13 @@ export default function Home() {
           </Box>
         </Container>
         <Box position="relative" p={0} pt="7rem">
-          <Box
-            w="100%"
-            h="45px"
-            bg="linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,1) 100%)"
-            position="absolute"
-            top="-1px"
-          />
+          {/* <Box */}
+          {/*   w="100%" */}
+          {/*   h="45px" */}
+          {/*   bg="linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,1) 100%)" */}
+          {/*   position="absolute" */}
+          {/*   top="-1px" */}
+          {/* /> */}
           <Container py="2rem" mt={0}>
             <LoginExplainer />
           </Container>

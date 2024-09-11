@@ -82,17 +82,21 @@ const Item = (props: {
           as={"h2"}
           fontFamily="body"
           fontWeight={700}
+          color="black"
           // wordBreak="break-all"
         >
           {props.title}
         </Text>
-        <Text fontFamily="body">{props.desc}</Text>
+        <Text fontFamily="body" color="black">
+          {props.desc}
+        </Text>
         <Button
-          p="1rem"
+          p="1rem 2rem"
           bg="rgba(0,0,0,0.1)"
           _hover={{ bg: "rgba(0,0,0,0.2)" }}
           onClick={props.onOpen}
           fontFamily="body"
+          color="black"
         >
           Mehr info
         </Button>
@@ -114,7 +118,7 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #1d061a;
+    background: white;
   }
 
   .container {
@@ -277,7 +281,7 @@ const Wrapper = styled.div`
 
   .container .box .content h2 {
     font-size: 2em;
-    color: #fff;
+    // color: #fff;
     margin-bottom: 10px;
   }
 
