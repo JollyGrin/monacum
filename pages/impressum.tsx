@@ -87,7 +87,7 @@ const Impress = () => (
     <strong>Registereintrag:</strong>
     <p>Eintragung im Handelsregister.</p>
     <p>Registergericht: Amtsgericht München</p>
-    <p>Registernummer: wird nachgereicht</p>
+    <p>Registernummer: HRB 296091</p>
     <strong>Umsatzsteuer-ID:</strong>
     <p>
       Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: wird
