@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Grid, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Grid, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
 export const LoginExplainer = () => {
@@ -24,51 +24,3 @@ export const LoginExplainer = () => {
     </Grid>
   );
 };
-
-const FakeLogin = () => (
-  <Flex
-    userSelect="none"
-    direction="column"
-    bg="brand.shadow"
-    p="2rem"
-    borderRadius="1rem"
-    gap="1rem"
-    opacity="0.5"
-  >
-    <Image
-      src="/logo.png"
-      alt="logo"
-      boxSize="10rem"
-      alignSelf="center"
-      bg="white"
-      borderRadius="100%"
-      p="1rem"
-    />
-    <Text
-      bg="pure.white"
-      p="1rem 2rem"
-      borderRadius="1rem"
-      border="solid 1px"
-      borderColor="brand.highlight"
-    >
-      Username
-    </Text>
-    <Text
-      bg="pure.white"
-      p="1rem 2rem"
-      borderRadius="1rem"
-      border="solid 1px"
-      borderColor="brand.highlight"
-    >
-      ************
-    </Text>
-    <Button
-      as={Link}
-      href="https://mycasavi.com/app/login"
-      cursor="pointer"
-      _hover={{}}
-    >
-      Log in
-    </Button>
-  </Flex>
-);
