@@ -32,7 +32,7 @@ export default function Home() {
           </Box>
           <Container>
             <Flex direction="column" maxW="700px" m="0 auto" gap="2rem">
-              <Text fontWeight={700} fontFamily="header" fontSize="3rem">
+              <Text fontWeight={700} fontSize="3rem">
                 Ihre Experten für Immobilienverwaltung in und um München
               </Text>
               <Text>
@@ -51,7 +51,7 @@ export default function Home() {
                 der Mietverwaltung über technische Objektbetreuung bis hin zur
                 Verwaltung von Wohnungseigentümergemeinschaften (WEG).
               </Text>
-              <Text fontWeight={700} fontFamily="header" fontSize="3rem">
+              <Text fontWeight={700} fontSize="3rem">
                 Was uns auszeichnet:
               </Text>
               <UnorderedList>
