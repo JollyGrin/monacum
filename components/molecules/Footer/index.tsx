@@ -6,7 +6,7 @@ import { Links } from "./Links";
 export const Footer = () => {
   return (
     <Box minH="20vh" bg="brand.secondary" color="brand.primary" p="2rem">
-      <MapIframe />
+      {/* <MapIframe /> */}
       <Grid
         display={{ base: "block", sm: "grid" }}
         templateColumns={{ base: "auto", sm: "1fr 3fr 1fr" }}
