@@ -47,7 +47,7 @@ export const LandingHero = () => {
           as={Link}
           href={{ query: { [CONTACT_QUERY_KEY]: undefined } }}
         >
-          Get in touch
+          Kontakt
         </Button>
       </VStack>
       <Box

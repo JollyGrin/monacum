@@ -18,7 +18,7 @@ export const LoginExplainer = () => {
           zugreifen.
         </Text>
         <Button mt="1rem" as={Link} href="https://mycasavi.com/app/login">
-          Login with Casavi
+          Login mit Casavi
         </Button>
       </Box>
     </Grid>
