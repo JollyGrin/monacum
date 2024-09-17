@@ -36,7 +36,7 @@ export function ContactModal(props: { isOpen: boolean; onClose(): void }) {
         >
           <ModalCloseButton />
           <ModalHeader fontSize="3rem" fontWeight={700} my="1rem" mx="1rem">
-            Contact Us
+            Kontakt
           </ModalHeader>
           <ModalBody p={{ base: "0.5rem", sm: "0 3rem 3rem" }}>
             <Grid placeItems="center" minH="30vh" fontSize="2.5rem">

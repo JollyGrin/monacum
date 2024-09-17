@@ -1,21 +1,9 @@
 import { THREE_IDs } from "@/components/organisms/Landing/ThreeColumns";
-import {
-  HStack,
-  Image,
-  Text,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  Grid,
-} from "@chakra-ui/react";
+import { HStack, Image, Text, Button, Grid } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
 import { FaLock as IconLock } from "react-icons/fa";
 import { LuArrowUpRight as IconArrow } from "react-icons/lu";
-import { TbChevronDown as IconDown } from "react-icons/tb";
 import { ContactModal } from "../ContactModal";
 
 export const CONTACT_QUERY_KEY = "contact";
@@ -62,7 +50,6 @@ export const Nav = () => {
           <Button variant="ghost" as={Link} href={`/#${THREE_IDs.leistungen}`}>
             Leistungen
           </Button>
-          {/* <UberUns /> */}
 
           <Button variant="ghost" as={Link} href="/uber">
             Über uns
@@ -85,28 +72,10 @@ export const Nav = () => {
             Login
           </Button>
           <Button rightIcon={<IconArrow fontSize="3rem" />} onClick={onOpen}>
-            Contact Us
+            Kontakt
           </Button>
         </HStack>
       </Grid>
     </>
-  );
-};
-
-const UberUns = () => {
-  return (
-    <Menu>
-      <MenuButton
-        as={Button}
-        variant="ghost"
-        rightIcon={<IconDown />}
-        fontWeight={600}
-      >
-        Über uns
-      </MenuButton>
-      <MenuList>
-        <MenuItem>Coming soon</MenuItem>
-      </MenuList>
-    </Menu>
   );
 };
