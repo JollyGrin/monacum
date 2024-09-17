@@ -31,7 +31,6 @@ export default function Impressum() {
               marginTop: "2rem",
               fontSize: "5rem",
               fontWeight: 700,
-              fontFamily: "header",
             }}
           >
             Impressum
