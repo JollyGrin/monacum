@@ -16,7 +16,7 @@ export const Links = () => {
       <Box mt="2rem">
         <LinkText href="/uber">Über uns</LinkText>
         <LinkText href="?contact=">Kontakt</LinkText>
-        <LinkText href="/datenschutz">Datenschutz</LinkText>
+        <LinkText href="/daten">Datenschutz</LinkText>
         <LinkText href="/impressum">Impressum</LinkText>
       </Box>
     </HStack>
