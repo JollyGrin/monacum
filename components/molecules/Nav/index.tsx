@@ -54,7 +54,7 @@ export const Nav = () => {
           <Button variant="ghost" as={Link} href="/uber">
             Über uns
           </Button>
-          <Button variant="ghost" as={Link} href="/">
+          <Button variant="ghost" as={Link} href="/daten">
             Datenschutz
           </Button>
           <Button variant="ghost" as={Link} href="/impressum">
