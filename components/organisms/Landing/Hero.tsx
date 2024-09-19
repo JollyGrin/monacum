@@ -2,22 +2,28 @@ import { CONTACT_QUERY_KEY } from "@/components/molecules/Nav";
 import { Image, Button, Box, Grid, Text, VStack } from "@chakra-ui/react";
 import Link from "next/link";
 import { LuArrowUpRight as IconArrow } from "react-icons/lu";
+import { motion } from "framer-motion";
+
+const MotionImage = motion(Image);
+const MotionGrid = motion(Grid);
 
 export const LandingHero = () => {
   return (
-    <Grid
+    <MotionGrid
       minH="80vh"
       placeItems="center"
-      // backgroundImage="/houses2.svg"
       bg="brand.secondary"
       backgroundBlendMode="hard-light"
       backgroundImage="/office.jpg"
       backgroundPosition="100% 40%"
-      backgroundSize="cover"
+      backgroundSize="150%" // Start zoomed in
       backgroundRepeat="repeat"
       mx="-2rem"
       position="relative"
       p="2rem"
+      initial={{ backgroundSize: "130%" }} // Starts zoomed in
+      animate={{ backgroundSize: "105%" }} // Animates to full size
+      transition={{ duration: 2 }} // Duration of the zoom effect (2 seconds)
     >
       <Box
         w="100%"
@@ -27,10 +33,13 @@ export const LandingHero = () => {
         top="0"
       />
       <VStack gap="2rem" maxW="600px">
-        <Image
+        <MotionImage
           src="/logo.png"
           alt="logo"
           maxW={{ base: "200px", md: "300px" }}
+          initial={{ opacity: 0, scale: 0.8 }} // Animation starts from 0 opacity and scaled down
+          animate={{ opacity: 1, scale: 1 }} // Animate to full opacity and original size
+          transition={{ duration: 3 }} // Duration of 1 second
         />
         <Text
           textAlign="center"
@@ -57,6 +66,6 @@ export const LandingHero = () => {
         position="absolute"
         bottom="0"
       />
-    </Grid>
+    </MotionGrid>
   );
 };
