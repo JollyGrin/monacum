@@ -22,6 +22,10 @@ export const colors = {
 };
 
 export const defaultTheme = extendBaseTheme({
+  config: {
+    initialColorMode: "light", // You can set this to 'light' or 'dark' as needed
+    useSystemColorMode: false, // This disables cookies and persistent color mod
+  },
   styles: {
     global: {
       body: {
