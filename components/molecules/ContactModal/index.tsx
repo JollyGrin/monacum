@@ -18,7 +18,6 @@ import Link from "next/link";
 import { MdEmail as IconEmail } from "react-icons/md";
 import { FaPhone as IconPhone } from "react-icons/fa";
 import { ReactNode } from "react";
-import { MapIframe } from "../Footer/MapIframe";
 
 const fields = {
   email: "info@monacum.com",
@@ -54,7 +53,6 @@ export function ContactModal(props: { isOpen: boolean; onClose(): void }) {
                 />
               </Flex>
             </Grid>
-            <MapIframe height="300px" />
           </ModalBody>
           <ModalFooter>
             <Button
