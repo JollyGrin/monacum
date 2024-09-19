@@ -8,7 +8,6 @@ import {
   HStack,
   VStack,
   Flex,
-  UnorderedList,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import Link from "next/link";
@@ -36,7 +35,7 @@ export default function Home() {
                 Datenschutzrichtlinien für Monacum Immobilienverwaltung GmbH
               </Text>
               <Text>
-                Wir, die Betreiber der Website Monacum
+                Wir, die Betreiber der Website *Monacum*
                 (https://www.monacum-immobilien.de), nehmen den Schutz Ihrer
                 persönlichen Daten sehr ernst. Diese Datenschutzerklärung
                 informiert Sie darüber, welche Daten wir erheben, wie wir diese
@@ -57,44 +56,60 @@ export default function Home() {
                 2. Erhobene Daten
               </Text>
               <Text>
-                Wir erheben keine personenbezogenen Daten von Nutzern über diese
-                Website. Unsere Website nutzt keine Cookies, keine Analysetools
-                und keine Tracking-Technologien. Es werden keine Informationen
-                über den Besuch oder die Nutzung dieser Website gespeichert.
+                Unsere Website erhebt keine personenbezogenen Daten von Nutzern,
+                es sei denn, sie werden freiwillig bereitgestellt (z. B. über
+                das Kontaktformular).
               </Text>
 
               <Text fontWeight={700} fontSize="3rem">
-                3. Speicherung und Hosting
+                3. Cookies und Tracking-Technologien
               </Text>
               <Text>
-                Der Code unserer Website wird privat auf GitHub gespeichert, und
-                die Website wird auf den Servern von Vercel gehostet. Beide
-                Plattformen sind DSGVO-konform und gewährleisten den Schutz
-                Ihrer Daten. Da wir jedoch keine Benutzerdaten erheben oder
-                verarbeiten, sind keine zusätzlichen Datenschutzmaßnahmen
-                erforderlich.
+                Wir selbst setzen *keine Cookies oder Analysetools* ein.
               </Text>
 
               <Text fontWeight={700} fontSize="3rem">
-                4. Weitergabe von Daten
+                4. Speicherung und Hosting
               </Text>
               <Text>
-                Da wir keine Daten von Ihnen erheben, werden selbstverständlich
-                auch keine Daten an Dritte weitergegeben.
+                Der Code unserer Website wird *privat auf GitHub* gespeichert,
+                und die Website wird auf den Servern von *Vercel* gehostet.
+                Beide Plattformen sind DSGVO-konform und gewährleisten den
+                Schutz Ihrer Daten.
               </Text>
 
               <Text fontWeight={700} fontSize="3rem">
-                5. Ihre Rechte
+                5. Weitergabe von Daten
               </Text>
               <Text>
-                Da wir keine personenbezogenen Daten verarbeiten, bestehen in
-                Bezug auf diese Website keine spezifischen Rechte zur
-                Datenverarbeitung. Sollten Sie dennoch Fragen haben, können Sie
-                uns jederzeit unter info@monacum-immobilien.de kontaktieren.
+                Da wir keine eigenen Benutzerdaten erheben, werden keine Daten
+                von uns an Dritte weitergegeben. Es können jedoch Daten durch
+                die Nutzung von Google Maps durch Google verarbeitet werden.
               </Text>
 
               <Text fontWeight={700} fontSize="3rem">
-                6. Änderungen der Datenschutzerklärung
+                6. Ihre Rechte
+              </Text>
+              <Text>Sie haben das Recht:</Text>
+              <ul>
+                <li>
+                  - Auskunft über die von uns gespeicherten Daten zu erhalten,
+                </li>
+
+                <li>
+                  - die Berichtigung, Löschung oder Einschränkung der
+                  Verarbeitung Ihrer Daten zu verlangen,
+                </li>
+                <li>- der Datenverarbeitung zu widersprechen.</li>
+              </ul>
+
+              <Text>
+                Für Fragen oder zur Ausübung Ihrer Rechte können Sie uns
+                jederzeit unter *info@monacum-immobilien.de* kontaktieren.
+              </Text>
+
+              <Text fontWeight={700} fontSize="3rem">
+                5. Änderungen der Datenschutzerklärung
               </Text>
               <Text>
                 Wir behalten uns das Recht vor, diese Datenschutzerklärung bei
