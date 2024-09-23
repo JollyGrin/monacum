@@ -41,10 +41,10 @@ export default function Impressum() {
             pt="2rem"
             minH="91vh"
             w="100%"
-            backgroundImage="/houses.svg"
-            backgroundPosition="bottom"
-            backgroundSize="auto"
-            backgroundRepeat="repeat-x"
+            // backgroundImage="/houses.svg"
+            // backgroundPosition="bottom"
+            // backgroundSize="auto"
+            // backgroundRepeat="repeat-x"
           >
             <VStack
               alignItems="start"
