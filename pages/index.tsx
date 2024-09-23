@@ -61,7 +61,7 @@ export default function Home() {
             </Text>
           </Box>
           <ThreeColumnItem />
-          <Box maxW="800px" m="0 auto" color="brand.shadow">
+          <Box maxW="800px" m="0 auto" color="black">
             <Text pt="2rem" color="inherit" fontWeight={500}>
               Gerne erstellen wir für Sie ein maßgeschneidertes Angebot mit
               detaillierter Leistungsbeschreibung und freuen uns darauf, Ihnen

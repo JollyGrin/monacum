@@ -41,10 +41,10 @@ export default function Impressum() {
             pt="2rem"
             minH="91vh"
             w="100%"
-            backgroundImage="/houses.svg"
-            backgroundPosition="bottom"
-            backgroundSize="auto"
-            backgroundRepeat="repeat-x"
+            // backgroundImage="/houses.svg"
+            // backgroundPosition="bottom"
+            // backgroundSize="auto"
+            // backgroundRepeat="repeat-x"
           >
             <VStack
               alignItems="start"
@@ -96,7 +96,7 @@ const Impress = () => (
     <strong>Wirtschafts-Identifikationsnummer:</strong>
     <p>Wirtschafts-Identifikationsnummer: wird nachgereicht</p>
     <strong>Berufserlaubnis:</strong>
-    <p>Genehmigung gemäß §34c GewO</p>
+    <p>Genehmigung gemäß §34c GewO: folgt</p>
   </>
 );
 
