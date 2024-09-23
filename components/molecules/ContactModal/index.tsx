@@ -20,7 +20,7 @@ import { FaPhone as IconPhone } from "react-icons/fa";
 import { ReactNode } from "react";
 
 const fields = {
-  email: "info@monacum.com",
+  email: "info@monacum-immobilien.de",
   phone: "+496170961709",
 };
 
