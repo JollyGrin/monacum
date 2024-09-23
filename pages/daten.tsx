@@ -93,14 +93,14 @@ export default function Home() {
               <Text>Sie haben das Recht:</Text>
               <ul>
                 <li>
-                  - Auskunft über die von uns gespeicherten Daten zu erhalten,
+                  Auskunft über die von uns gespeicherten Daten zu erhalten,
                 </li>
 
                 <li>
-                  - die Berichtigung, Löschung oder Einschränkung der
-                  Verarbeitung Ihrer Daten zu verlangen,
+                  die Berichtigung, Löschung oder Einschränkung der Verarbeitung
+                  Ihrer Daten zu verlangen,
                 </li>
-                <li>- der Datenverarbeitung zu widersprechen.</li>
+                <li> der Datenverarbeitung zu widersprechen.</li>
               </ul>
 
               <Text>
