@@ -52,6 +52,7 @@ export const LandingHero = () => {
           Monacum Immobilien
         </Text>
         <Button
+          zIndex={1000}
           rightIcon={<IconArrow fontSize="3rem" />}
           as={Link}
           href={{ query: { [CONTACT_QUERY_KEY]: undefined } }}
