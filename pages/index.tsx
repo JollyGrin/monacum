@@ -89,7 +89,14 @@ export default function Home() {
           {/*   top="-1px" */}
           {/* /> */}
           <Container py="2rem" mt={0}>
-            <LoginExplainer />
+            <Flex
+              direction="column"
+              bg="rgba(0,255,0,1)"
+              borderRadius="1rem"
+              p="3rem 1rem"
+            >
+              <LoginExplainer />
+            </Flex>
           </Container>
         </Box>
         <Footer />
