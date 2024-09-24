@@ -1,6 +1,6 @@
 import { Nav } from "@/components/molecules/Nav";
 import { LandingHero } from "@/components/organisms/Landing/Hero";
-import { Image, HStack, Box, Text, ChakraProps } from "@chakra-ui/react";
+import { Image, HStack, Box, Text, ChakraProps, Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import { ReactNode } from "react";
 import { ThreeColumnItem } from "@/components/organisms/Landing/ThreeColumns";
@@ -21,22 +21,33 @@ export default function Home() {
           <Nav />
           <LandingHero />
         </Box>
-        <Container>
-          <HStack
-            // alignItems="start"
+        <Container
+          maxW="1100px"
+          m="0 auto"
+          bgImg="/towers.jpg"
+          backgroundSize="cover"
+          backgroundPosition="center"
+          borderRadius="1rem"
+          color="white"
+          overflow="clip"
+        >
+          <Flex
+            direction="column"
+            p="3rem"
             gap="1rem"
             flexDirection={{ base: "column", md: "row" }}
             mb="2rem"
             minH="300px"
+            w="100%"
+            bg="rgba(0,255,0,0.1)"
+            backdropFilter="blur(10px) brightness(0.75)"
+            borderRadius="1rem"
+            fontSize="2rem"
+            alignItems="center"
+            justifyContent="center"
           >
-            <Image
-              alt="image"
-              src="/towers.jpg"
-              maxW={{ base: "100%", sm: "300px" }}
-              borderRadius="1rem"
-            />
-            <Box>
-              <Text fontWeight={700}>
+            <Box maxW="700px">
+              <Text fontWeight={700} fontSize="3rem">
                 Mit uns haben Sie den idealen Partner an Ihrer Seite
               </Text>
               <Text>
@@ -46,7 +57,7 @@ export default function Home() {
                 übertreffen.
               </Text>
             </Box>
-          </HStack>
+          </Flex>
         </Container>
         <Container
           bg="brand.primary"
