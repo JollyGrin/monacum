@@ -1,10 +1,10 @@
-import { Box, Button, Grid, Text } from "@chakra-ui/react";
+import { Flex, Button, Grid, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
 export const LoginExplainer = () => {
   return (
-    <Grid placeItems="center" gap="2rem" maxW="600px" m="0 auto">
-      <Box id="login">
+    <Grid placeItems="center" gap="2rem" m="0 auto">
+      <Flex id="login" direction="column">
         <Text fontWeight={600} fontSize="2.5rem">
           Login
         </Text>
@@ -17,10 +17,16 @@ export const LoginExplainer = () => {
           Energieausweis, die Gebäudeversicherungsurkunde und vieles mehr
           zugreifen.
         </Text>
-        <Button mt="1rem" as={Link} href="https://mycasavi.com/app/login">
+        <Button
+          as={Link}
+          href="https://mycasavi.com/app/login"
+          alignSelf="center"
+          w="fit-content"
+          mt="2rem"
+        >
           Login mit Casavi
         </Button>
-      </Box>
+      </Flex>
     </Grid>
   );
 };
