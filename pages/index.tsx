@@ -40,7 +40,7 @@ export default function Home() {
                 Mit uns haben Sie den idealen Partner an Ihrer Seite
               </Text>
               <Text>
-                Unsere umfassenden Dienstleistunge in den Bereichen
+                Unsere umfassenden Dienstleistungen in den Bereichen
                 Wohneigentums-, Miet- und Sondereigentumsverwaltung zielen
                 darauf ab, Ihre Erwartungen nicht nur zu erfüllen, sondern zu
                 übertreffen.
