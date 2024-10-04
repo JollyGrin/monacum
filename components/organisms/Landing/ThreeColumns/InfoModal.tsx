@@ -30,7 +30,7 @@ export function InfoModal(props: {
           <ModalHeader fontSize="3rem" fontWeight={700} my="1rem" mx="1rem">
             {
               {
-                WEG: <Text>Weg-Verwaltung</Text>,
+                WEG: <Text>WEG-Verwaltung</Text>,
                 MIET: <Text>Miethausverwaltung</Text>,
                 SONDER: <Text>Sondereigentumsverwaltung</Text>,
               }[props.modalKey]
