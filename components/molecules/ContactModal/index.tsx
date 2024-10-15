@@ -21,7 +21,7 @@ import { ReactNode } from "react";
 
 const fields = {
   email: "info@monacum-immobilien.de",
-  phone: "folgt",
+  phone: "089 890467430",
 };
 
 export function ContactModal(props: { isOpen: boolean; onClose(): void }) {
