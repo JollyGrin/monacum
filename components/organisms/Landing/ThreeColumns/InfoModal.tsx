@@ -54,7 +54,7 @@ export function InfoModal(props: {
 const Weg = () => (
   <Box>
     <Text>
-      Unser Fokus liegt auf dem Vertrauen unserer Kundinnen, langjährigem
+      Unser Fokus liegt auf dem Vertrauen unserer Kund*innen, langjährigem
       Know-how und der zuverlässigen Betreuung Ihrer
       Wohnungseigentümergemeinschaft.
       <br />
