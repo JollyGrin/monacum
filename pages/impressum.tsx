@@ -90,11 +90,11 @@ const Impress = () => (
     <p>Registernummer: HRB 296091</p>
     <strong>Umsatzsteuer-ID:</strong>
     <p>
-      Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: wird
-      nachgereicht
+      Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:
+      DE407392777
     </p>
     <strong>Wirtschafts-Identifikationsnummer:</strong>
-    <p>Wirtschafts-Identifikationsnummer: wird nachgereicht</p>
+    <p>Wirtschafts-Identifikationsnummer: DE407392777</p>
     <strong>Berufserlaubnis:</strong>
     <p>Genehmigung gemäß §34c GewO: folgt</p>
   </>
