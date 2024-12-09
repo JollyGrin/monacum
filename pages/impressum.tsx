@@ -96,7 +96,7 @@ const Impress = () => (
     <strong>Wirtschafts-Identifikationsnummer:</strong>
     <p>Wirtschafts-Identifikationsnummer: DE407392777</p>
     <strong>Berufserlaubnis:</strong>
-    <p>Genehmigung gemäß §34c GewO: folgt</p>
+    <p>Genehmigung gemäß §34c GewO</p>
   </>
 );
 
