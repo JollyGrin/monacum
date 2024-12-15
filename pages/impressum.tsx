@@ -93,8 +93,6 @@ const Impress = () => (
       Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:
       DE407392777
     </p>
-    <strong>Wirtschafts-Identifikationsnummer:</strong>
-    <p>Wirtschafts-Identifikationsnummer: DE407392777</p>
     <strong>Berufserlaubnis:</strong>
     <p>Genehmigung gemäß §34c GewO</p>
   </>
