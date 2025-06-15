@@ -41,10 +41,10 @@ export default function Impressum() {
             pt="2rem"
             minH="91vh"
             w="100%"
-            // backgroundImage="/houses.svg"
-            // backgroundPosition="bottom"
-            // backgroundSize="auto"
-            // backgroundRepeat="repeat-x"
+          // backgroundImage="/houses.svg"
+          // backgroundPosition="bottom"
+          // backgroundSize="auto"
+          // backgroundRepeat="repeat-x"
           >
             <VStack
               alignItems="start"
@@ -82,7 +82,7 @@ const Impress = () => (
     <p>Vertreten durch:</p>
     <p>Michael Werner Hödl und Maximilian Reichenbächer</p>
     <strong>Kontakt:</strong>
-    <p>Telefon: +49 (0)176-23648073</p>
+    <p>Telefon: +49 (0)172-868-6748</p>
     <p>E-Mail: info@monacum-immobilien.de</p>
     <strong>Registereintrag:</strong>
     <p>Eintragung im Handelsregister.</p>
