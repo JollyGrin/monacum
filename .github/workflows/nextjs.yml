@@ -1,6 +1,6 @@
 name: Deploy Next.js site to Pages
 
-# Properly configured for GitHub Pages deployment
+# Updated to use non-deprecated actions
 
 on:
   # Runs on pushes targeting the default branch
@@ -66,11 +66,16 @@ jobs:
       # - name: Export Static HTML with Next.js
       #   run: pnpm next export
 
-      # Using upload-pages-artifact which is specifically designed for GitHub Pages
+      # Replace the deprecated actions/upload-pages-artifact with a direct tar approach
+      - name: Archive site output
+        run: tar --dereference --hard-dereference -cvf "$RUNNER_TEMP/artifact.tar" --directory=out .
+        
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
-          path: ./out
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
 
   # Deployment job
   deploy:
@@ -80,6 +85,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      # Deploy the artifact directly using the github-pages environment
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
